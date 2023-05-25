@@ -5,4 +5,8 @@ h1{color: teal; position: center;}
 h3{color:white; position: center;}
 ul li, ol li{ color: white;}
 ul, ol{ color: white; position: center;}
+th, td{ color: white;}
 body{background-color: black;}
+.center{
+    margin :auto;
+}
