@@ -1,0 +1,8 @@
+
+header{ position: sticky; background-color: #002906;}
+p{color:white; position: center;}
+h1{color: teal; position: center;}
+h3{color:white; position: center;}
+ul li, ol li{ color: white;}
+ul, ol{ color: white; position: center;}
+body{background-color: black;}
