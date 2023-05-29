@@ -24,7 +24,6 @@ form {
     align-items: center;
 }
 textarea{ width: 500px ; height: 250px;}
-textarea{ width: 500px ; height: 250px;}
 h1.cyan{color: rgb(45, 189, 189);}
 h3.listTitle{ margin-top: 60px;}
 img.righty{ float: right; padding: 10px; width : 49%; height: auto; max-width: 500px;}

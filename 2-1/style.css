@@ -3,13 +3,7 @@ header{ position: sticky; background-color: #002906;}
 p{color:white; text-align: center;}
 h1{color: teal; text-align: center;}
 h3{color:white; text-align: center;}
-ul, ol {
-    color: white;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+ul, ol{ color: white; justify-content: center; display: flex;}
 th, td{ color: white;}
 body{background-color: black;}
 .center{
