@@ -28,8 +28,10 @@ h1.cyan{color: rgb(45, 189, 189);}
 h3.listTitle{ margin-top: 60px;}
 img.righty{ float: right; padding: 10px; width : 49%; height: auto; max-width: 500px;}
 p.border{border : 4px solid darkgreen; width: 49%;}
+
 div.navbar{ position:sticky;
 top: 0px; background-color: darkgreen;}
+
 header{
     margin: 0px;
     padding: 0%;

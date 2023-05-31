@@ -1,0 +1,35 @@
+div.everything{ 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+div.navbar{
+    display: inline;
+    margin-left: 79px;
+    margin-right: 46;
+    margin-top: 30px;
+}
+img.logo{
+margin-top: 20px ;
+width: 28px;
+height: 28px;
+}
+h1.site_name{
+width: 75px;
+height: 36px;
+left: 127px;
+top: 34px;
+
+font-family: 'Campton';
+font-size: 25.886px;
+line-height: 30px;
+
+color: #3D3D3D;
+
+}
+
+div.logo_left{
+    float: left;
+    display: inline-flex;
+    width: 900px;
+    height: 400;
+}
