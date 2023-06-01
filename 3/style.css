@@ -1,3 +1,6 @@
+body{
+    margin: 0px;
+}
 div.everything{ 
     margin-left: 40px;
     margin-right: 40px;
@@ -53,6 +56,24 @@ a.right{
 a.sign_in{
     padding-top: 17px;
     padding-left: 30px;
+    
+    
+
+}
+p.sign_in{
+    
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+
+    
+
+    color: #031CFF;
+    border-radius: 100px;
+    margin-top: 9px;
+    
 }
 button.sign_in{
 box-sizing: border-box;
@@ -72,144 +93,118 @@ line-height: 16px;
 
 text-align: center;
 
+
 color: #031CFF;
 }
+div.GoPlaces{
+    width: 1360px;
+    height: 616px;
+    margin-top: 99px;
+    background-image: url(../images/Rectangle.png);
+}
+h2.goPlaces{
+position: relative;
+width: 358px;
+height: 93px;
+left: 301px;
+top: 251px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 78.9191px;
+line-height: 92px;
 
 
+color: #FFFFFF;
+
+margin: 0px;
+
+}
+h3.withFigma{
+position: relative;
+width: 104px;
+height: 22px;
+left: 303px;
+top: 254px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+color: #FFFFFF;
+margin: 0px;
+
+}
+
+div.line{
+    /* Line */
 
 
+position: relative;
+width: 343px;
+height: 0px;
+left: 485px;
+top: 257px;
 
-/* Fonts */
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonBlack.otf);
+border: 1px solid #FFFFFF;
 
+}
+button.reserveNow{
+position: relative;
+width: 251px;
+height: 54px;
+left: 241px;
+top: 326px;
+
+background: #031CFF;
+border-radius: 100px;
+}
+p.reserveNow{
+    position: relative;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+
+color: #ffffff;
+
+border-radius: 100px;
+margin-top: 14px;
+}
+div.watchNow{
+    position: relative;
+    width: 251px;
+    height: 54px;
+    left: 513px;
+    top: 270px;
+
+    border: 3px solid #FFFFFF;
+    border-radius: 100px;
+   
+    }
+div.inline{
+    display: inline;
+}
+p.watchNow{
+
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonBlackItalic.otf);
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 
-    font-weight: 900;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonBold.otf);
+    color: #FFFFFF;
 
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonBoldItalic.otf);
-
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonBook.otf);
-
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonBookItalic.otf);
-
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonExtraBold.otf);
-
-    font-weight: bolder;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonExtraBoldItalic.otf);
-
-    font-weight: bolder;
-    font-style: italic;
-    
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonExtraLight.otf);
-
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonExtraLightItalic.otf);
-
-    font-weight: 100;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonLight.otf);
-
-    font-weight: lighter;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonLightItalic.otf);
-
-    font-weight: light;
-    font-style: italic;
+    border-radius: 100px;
 }
 
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonMedium.otf);
 
-    font-weight: medium;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonMediumItalic.otf);
-
-    font-weight: medium;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonSemiBold.otf);
-
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonSemiBoldItalic.otf);
-
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonThin.otf);
-
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'campton';
-    src: url(./fonts/campton/campton-cufonfonts/CamptonThinItalic.otf);
-
-    font-weight: lighter;
-    font-style: italic;
-}
