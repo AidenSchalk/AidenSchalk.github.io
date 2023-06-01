@@ -44,8 +44,10 @@ a.right{
     height: 17px;
     
     font-family: 'Campton';
-    font-size: 12px;
-    line-height: 14px;
+font-size: 12px;
+line-height: 14px;
+
+
     padding-left: 20px;
     padding-top: 28px;
 
@@ -206,5 +208,107 @@ p.watchNow{
 
     border-radius: 100px;
 }
+div.blueBlock{
+    position: absolute;
+width: 420px;
+height: 616px;
+left: 980px;
+top: 117.5px;
+
+background: #031CFF;
+mix-blend-mode: multiply;
+}
+a.watchNow{
+    text-decoration: none;
+}
+
+div.mountain{
+    padding-top: 50px;
+    width: 543px;
+    height: 914px;
+}
+img.mountain{
+    position: reletive;
+    width: 516px;
+    height: 689px;
+    left: 120px;
+    top: 820px;
+}
+img.dots{
+    position: absolute;
+    width: 303px;
+    height: 266px;
+    left: 290px;
+    top: 1408px;
+}
+img.shader{
+    position: absolute;
+    width: 191px;
+    height: 366px;
+    left: 41px;
+    top: 1105px;
+}
+div.featured{
+    position: absolute;
+    top: 0px;
+    left: 709px;
+    top: 974px;
+}
+h3.featured{
+    position: relative;
+    width: 284px;
+    height: 26px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+
+    letter-spacing: 1em;
+    text-transform: uppercase;
+
+    color: #031CFF;
+}
+div.cliffs{
+    display: inline-flex;
+
+}
+img.cliffs{
+    position: relative;
+width: 180px;
+left: 0px;
+top: 38px;
+bottom: 0%;
+padding-right:  30px;
+}
+h3.place{
+    left: 216px;
+    right: 74px;
+    top: -200px;
+    bottom: 75.18%;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 40px;
+    width: 300px;
+    
+}
+p.description{
+    position: relative;
 
 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+color: #9597A6;
+}
+div.text{
+    
+}
