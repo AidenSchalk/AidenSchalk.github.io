@@ -1415,7 +1415,7 @@ a {
 .cid-v8RUYmMg8I {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #757b62;
+  background-color: #320707;
 }
 .cid-v8RUYmMg8I .row {
   flex-direction: row-reverse;
@@ -1681,7 +1681,7 @@ a {
 .cid-v8V1VxnKbT {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #000000;
+  background-color: #232323;
 }
 .cid-v8V1VxnKbT .row {
   flex-direction: row-reverse;
@@ -1770,7 +1770,7 @@ a {
 .cid-v8V20BuHjD {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #000000;
+  background-color: #232323;
 }
 .cid-v8V20BuHjD .mbr-fallback-image.disabled {
   display: none;
@@ -2034,4 +2034,10 @@ a {
 .cid-v9x3C8LQmS .mbr-text,
 .cid-v9x3C8LQmS .item-wrapper .mbr-section-btn {
   text-align: left;
+}
+.cid-v9C3dvKJL2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #320707;
+  overflow: hidden;
 }
