@@ -1,0 +1,35 @@
+{
+    
+     "DLCs": [
+    {
+        "title" : "extra enemies",
+        "price" : 20, 
+        "downloaded" : false,
+        "size" : "10Kb"
+    }, 
+    {
+        "title" : "extra characters",
+        "price" : 20, 
+        "downloaded" : true,
+        "size" : "10Kb"
+    }, 
+    {
+        "title" : "extra maps",
+        "price" : 25, 
+        "downloaded" : false,
+        "size" : "40Kb"
+    }, 
+    {
+        "title" : "soundtrack",
+        "price" : 10, 
+        "downloaded" : true,
+        "size" : "5Kb"
+    }, 
+    {
+        "title" : "extra skins",
+        "price" : 15, 
+        "downloaded" : true,
+        "size" : "5Kb"
+    }
+]
+}
