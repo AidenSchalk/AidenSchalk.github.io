@@ -2,21 +2,21 @@
     
      "DLCs": [
     {
-        "title" : "extra enemies",
+        "title" : "Extra Enemies",
         "price" : 20, 
         "downloaded" : false,
         "size" : "10 Kb", 
         "description": "This DLC adds enemies to the game"
     }, 
     {
-        "title" : "extra characters",
+        "title" : "Extra Characters",
         "price" : 20, 
         "downloaded" : true,
         "size" : "10 Kb", 
         "description": "This DLC adds playable characters"
     }, 
     {
-        "title" : "extra maps",
+        "title" : "Extra Maps",
         "price" : 25, 
         "downloaded" : false,
         "size" : "40 Kb", 
@@ -30,14 +30,14 @@
         "description": "This DLC allows the user to download the soundtrack outside of the game"
     }, 
     {
-        "title" : "extra skins",
+        "title" : "Extra Skins",
         "price" : 15, 
         "downloaded" : true,
         "size" : "5 Kb", 
         "description": "This DLC adds skins for the playable characters"
     },
     {
-        "title" : "Extra powers",
+        "title" : "Extra Powers",
         "price" : 15, 
         "downloaded" : false,
         "size" : "20 Kb", 
