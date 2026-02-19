@@ -5,31 +5,57 @@
         "title" : "extra enemies",
         "price" : 20, 
         "downloaded" : false,
-        "size" : "10Kb"
+        "size" : "10 Kb", 
+        "description": "This DLC adds enemies to the game"
     }, 
     {
         "title" : "extra characters",
         "price" : 20, 
         "downloaded" : true,
-        "size" : "10Kb"
+        "size" : "10 Kb", 
+        "description": "This DLC adds playable characters"
     }, 
     {
         "title" : "extra maps",
         "price" : 25, 
         "downloaded" : false,
-        "size" : "40Kb"
+        "size" : "40 Kb", 
+        "description": "This DLC adds regions for the player to explore"
     }, 
     {
         "title" : "soundtrack",
         "price" : 10, 
         "downloaded" : true,
-        "size" : "5Kb"
+        "size" : "5 Kb", 
+        "description": "This DLC allows the user to download the soundtrack outside of the game"
     }, 
     {
         "title" : "extra skins",
         "price" : 15, 
         "downloaded" : true,
-        "size" : "5Kb"
+        "size" : "5 Kb", 
+        "description": "This DLC adds skins for the playable characters"
+    },
+    {
+        "title" : "Extra powers",
+        "price" : 15, 
+        "downloaded" : false,
+        "size" : "20 Kb", 
+        "description": "This DLC adds skills for the playable characters"
+    }, 
+    {
+        "title" : "Revenge of the Damned",
+        "price" : 25, 
+        "downloaded" : true,
+        "size" : "20 Mb", 
+        "description": "This DLC is the first expansion to the story"
+    }, 
+    {
+        "title" : "Nightmare Mode",
+        "price" : 10, 
+        "downloaded" : true,
+        "size" : "15 Kb", 
+        "description": "This DLC unlocks the hardest gamemode for the player"
     }
 ]
 }
