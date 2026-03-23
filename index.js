@@ -7,7 +7,7 @@ const prnt = (txt) => console.log(txt);
 const server = http.createServer( (req, res) => {
     if(req.url === '/'){
         // res.end("<h1> Home Page</h1>");
-        fs.readFile( path.join(__dirname, 'public', 'index.html'),
+        fs.readFile( path.join(__dirname, 'index.html'),
             (err, content) => {
                 if(err) throw err;
                 res.writeHead(200, {'content-type': 'text/html'})
@@ -17,7 +17,7 @@ const server = http.createServer( (req, res) => {
 
     }
     else if(req.url === '/api'){
-            fs.readFile( path.join(__dirname, 'public', 'db.json'),
+            fs.readFile( path.join(__dirname, 'db.json'),
             (err, content) => {
                 if(err) throw err;
                 res.writeHead(200, {'content-type': 'application/json'}) //quiz question: what is the content type for db.json
@@ -25,21 +25,35 @@ const server = http.createServer( (req, res) => {
             }
         )
     }
-    else{
-        fs.readFile( path.join(__dirname, 'public', '404.html'),
-            (err, content) => {
-                if(err) throw err;
-                res.writeHead(404, {'content-type': 'text/html'})
-                res.end(content);
-            }
-        )
+    else if (
+    req.url.endsWith('.css') ||
+    req.url.endsWith('.js') ||
+    req.url.endsWith('.png') ||
+    req.url.endsWith('.jpg')
+    ){
+    const filePath = path.join(__dirname, req.url);
 
-    }
+    fs.readFile(filePath, (err, content) => {
+        if (err) throw err;
+            const ext = path.extname(filePath);
+
+            let contentType;
+            if (ext === '.css') contentType = 'text/css';
+            if (ext === '.js') contentType = 'text/javascript';
+            if (ext === '.png') contentType = 'image/png';
+            if (ext === '.jpg') contentType = 'image/jpeg';
+
+            res.writeHead(200, {'content-type': contentType});
+            res.end(content);
+        
+    });
+}
 
     prnt(req.url)
 
 }
 
 )
-server.listen(5959, ()=>prnt("Yay our server is running"));
+const PORT = process.env.PORT || 3000;
 
+server.listen(PORT, () => console.log("Server running"));
