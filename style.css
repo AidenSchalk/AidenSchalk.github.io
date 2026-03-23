@@ -135,6 +135,7 @@ footer{
     grid-area: img3; 
     width: 20vw;
 }
+
 .logo{
     max-height: 10vh;
 }
@@ -182,6 +183,14 @@ footer{
     display: flex;
     justify-content: space-around;
     min-height: 100vh;
+    height: auto;
+
+}
+.threeItemsExtra{
+    padding: 10vh;
+    display: flex;
+    justify-content: space-around;
+    min-height: fit-content;
     height: auto;
 
 }
