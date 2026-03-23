@@ -6,56 +6,56 @@
         "price" : 20, 
         "downloaded" : false,
         "size" : "10 Kb", 
-        "description": "This DLC adds enemies to the game"
+        "description": "Introduces a host of new enemy types, each with unique abilities and behaviors that force players to adapt their combat strategies and master new tactics."
     }, 
     {
         "title" : "Extra Characters",
         "price" : 20, 
         "downloaded" : true,
         "size" : "10 Kb", 
-        "description": "This DLC adds playable characters"
+        "description": "Unlocks a roster of new playable characters, each with distinct abilities, playstyles, and progression paths to expand your approach to combat."
     }, 
     {
         "title" : "Extra Maps",
         "price" : 25, 
         "downloaded" : false,
         "size" : "40 Kb", 
-        "description": "This DLC adds regions for the player to explore"
+        "description": "Expands the world with new regions to explore, featuring unique environments, hidden secrets, and fresh challenges that deepen the gameplay experience."
     }, 
     {
         "title" : "soundtrack",
         "price" : 10, 
         "downloaded" : true,
         "size" : "5 Kb", 
-        "description": "This DLC allows the user to download the soundtrack outside of the game"
+        "description": "Grants access to the full game soundtrack, allowing you to enjoy the atmospheric music anytime outside the game."
     }, 
     {
         "title" : "Extra Skins",
         "price" : 15, 
         "downloaded" : true,
         "size" : "5 Kb", 
-        "description": "This DLC adds skins for the playable characters"
+        "description": "Adds a variety of cosmetic skins for playable characters, letting you customize your appearance without affecting gameplay."
     },
     {
         "title" : "Extra Powers",
         "price" : 15, 
         "downloaded" : false,
         "size" : "20 Kb", 
-        "description": "This DLC adds skills for the playable characters"
+        "description": "Introduces new abilities and skill upgrades that enhance combat depth and allow for more diverse and powerful character builds."
     }, 
     {
         "title" : "Revenge of the Damned",
         "price" : 25, 
         "downloaded" : true,
         "size" : "20 Mb", 
-        "description": "This DLC is the first expansion to the story"
+        "description": "A full story expansion that continues the narrative, introducing new missions, enemies, and challenges as the battle against the demonic forces intensifies."
     }, 
     {
         "title" : "Nightmare Mode",
         "price" : 10, 
         "downloaded" : true,
         "size" : "15 Kb", 
-        "description": "This DLC unlocks the hardest gamemode for the player"
+        "description": "Unlocks an extreme difficulty mode designed for experienced players, featuring tougher enemies, higher stakes, and a true test of skill."
     }
 ]
 }
