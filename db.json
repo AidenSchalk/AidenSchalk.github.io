@@ -2,13 +2,14 @@
     
      "DLCs": [
     {
+        "DLCID" : 1,
         "title" : "Extra Enemies",
         "price" : 20, 
         "downloaded" : false,
         "size" : "10 Kb", 
         "description": "Introduces a host of new enemy types, each with unique abilities and behaviors that force players to adapt their combat strategies and master new tactics."
     }, 
-    {
+    {   "DLCID" : 2,
         "title" : "Extra Characters",
         "price" : 20, 
         "downloaded" : true,
@@ -16,6 +17,7 @@
         "description": "Unlocks a roster of new playable characters, each with distinct abilities, playstyles, and progression paths to expand your approach to combat."
     }, 
     {
+        "DLCID" : 3,
         "title" : "Extra Maps",
         "price" : 25, 
         "downloaded" : false,
@@ -23,6 +25,7 @@
         "description": "Expands the world with new regions to explore, featuring unique environments, hidden secrets, and fresh challenges that deepen the gameplay experience."
     }, 
     {
+        "DLCID" : 4,
         "title" : "soundtrack",
         "price" : 10, 
         "downloaded" : true,
@@ -30,6 +33,7 @@
         "description": "Grants access to the full game soundtrack, allowing you to enjoy the atmospheric music anytime outside the game."
     }, 
     {
+        "DLCID" : 5,
         "title" : "Extra Skins",
         "price" : 15, 
         "downloaded" : true,
@@ -37,6 +41,7 @@
         "description": "Adds a variety of cosmetic skins for playable characters, letting you customize your appearance without affecting gameplay."
     },
     {
+        "DLCID" : 6,
         "title" : "Extra Powers",
         "price" : 15, 
         "downloaded" : false,
@@ -44,6 +49,7 @@
         "description": "Introduces new abilities and skill upgrades that enhance combat depth and allow for more diverse and powerful character builds."
     }, 
     {
+        "DLCID" : 7,
         "title" : "Revenge of the Damned",
         "price" : 25, 
         "downloaded" : true,
@@ -51,6 +57,7 @@
         "description": "A full story expansion that continues the narrative, introducing new missions, enemies, and challenges as the battle against the demonic forces intensifies."
     }, 
     {
+        "DLCID" : 8,
         "title" : "Nightmare Mode",
         "price" : 10, 
         "downloaded" : true,
