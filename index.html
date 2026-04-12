@@ -278,34 +278,37 @@ The ultimate challenge reserved for those who have mastered every system. Enemie
 
         </div>
         <script>
-            async function getDLCs(){
-                    try{
-                        const response = await fetch("/api");
-                        const data = await response.json();
-                        const DLCscontainer= document.getElementById(`DLCs`);
+            async function getDLCs() {
+            try {
+            const response = await fetch("/api");
+            const data = await response.json();
 
-                        for( let DLC of data.DLCs){
-                            const single_DLC = document.createElement('div');
-                            single_DLC.classList.add('DLC');
+            const DLCscontainer = document.getElementById("DLCs");
+            DLCscontainer.innerHTML = "";
 
-                            single_DLC.innerHTML = `
-                            <h3 class="title3">${DLC.title} </h3>
-                            <p class = "text4"> 
-                                <span> $${DLC.price} </span>
-                                <span> ${DLC.size}  </span>
-                            </p>
-                            <p class="subtext">
-                                ${DLC.description}
-                            </p>
-                            
-                            `
-                            DLCscontainer.appendChild(single_DLC);
-                        }
-                    }catch(error){
-                        console.log("Error --->", error);
-                    }
-                }
-            getDLCs();
+            for (let DLC of data) {
+                const single_DLC = document.createElement("div");
+                single_DLC.classList.add("DLC");
+
+                single_DLC.innerHTML = `
+                <h3 class="title3">${DLC.title ?? "No title"}</h3>
+                <p class="text4">
+                    <span>$${DLC.price ?? "N/A"}</span>
+                    <span>${DLC.size ?? "N/A"}</span>
+                </p>
+                <p class="subtext">
+                    ${DLC.description ?? "No description"}
+                </p>
+                `;
+
+                DLCscontainer.appendChild(single_DLC);
+            }
+            } catch (error) {
+            console.log("Error --->", error);
+            }
+        }
+
+        getDLCs();
         </script>
         <script>
             const hamburger = document.getElementById("hamburger");
