@@ -53,6 +53,10 @@ footer{
 #gameplay {
     background-color: var(--red);
 }
+#login{
+    background-color: var(--red);
+
+}
 .title { 
     grid-area: title; 
     color: var(--white);
@@ -238,6 +242,18 @@ footer{
   border: none;
   color: var(--grey);
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .landingimg{
         width: 100%;
