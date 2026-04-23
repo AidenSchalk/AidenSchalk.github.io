@@ -45,10 +45,10 @@ app.use(express.urlencoded({ extended: false }))    // Parses URL-encoded form b
 app.use(express.static(path.join(__dirname, '../frontend')))
 
 // ── API Routes --------------------------
-// Mount the note and user routers under their respective base paths.
-// All routes defined in noteRoutes.js are prefixed with /api/notes
+// Mount the DLC and user routers under their respective base paths.
+// All routes defined in DLCRoutes.js are prefixed with /api/DLCs
 // All routes defined in userRoutes.js are prefixed with /api/users
-app.use('/api/notes', require('./routes/noteRoutes'))
+app.use('/api/DLCs', require('./routes/DLCRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
 // ── Global Error Handler --------------------------

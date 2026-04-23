@@ -28,11 +28,11 @@ const DLCSchema = mongoose.Schema(
       required: [true, 'Please add a text value'], // Second element is a custom error message returned when validation fails
     },
     price: {
-      type: int32,
+      type: Int32,
       required: [true, 'Please add a number value'], // Second element is a custom error message returned when validation fails
     },
     downloaded: {
-      type: String,
+      type: Boolean,
       required: [true, 'Please add a text value'], // Second element is a custom error message returned when validation fails
     },
     size: {

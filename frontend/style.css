@@ -7,7 +7,7 @@
     flex-wrap: wrap;
 }
 
-html, body {
+html, body, h1{
     margin: 0;
     padding: 0;
 }
@@ -264,6 +264,34 @@ footer{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
+}
+#dash{
+    background-color: var(--grey);
+    margin: 0px;
+    min-height: 100vh;
+    height: fit-content;
+    color: white;
+
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.create{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px;
+    border-radius: 4px;
 }
 
 
