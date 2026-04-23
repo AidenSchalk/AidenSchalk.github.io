@@ -57,6 +57,9 @@ footer{
     background-color: var(--red);
 
 }
+#login.register{
+    background-color: var(--red);
+}
 .title { 
     grid-area: title; 
     color: var(--white);
@@ -248,6 +251,19 @@ footer{
     color: var(--white);
     justify-content: center;
     align-items: center;
+}
+.register{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-image: url("images/register.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 
