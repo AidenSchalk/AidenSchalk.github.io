@@ -75,6 +75,11 @@ if (loginForm) {
         return
       }
 
+
+      if (!data.token) {
+      document.getElementById('errorMsg').textContent = 'Login worked, but no token returned'
+      return
+}
       // Save the JWT token in localStorage so we can attach it to every future note request
       // Without this token, the backend will reject requests with 401 Unauthorized
       localStorage.setItem('token', data.token)
