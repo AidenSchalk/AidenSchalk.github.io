@@ -126,7 +126,8 @@ const generateToken = (id) => {
     )
 }
 
-
+const data = await res.json()
+console.log('LOGIN RESPONSE:', data)
 // Export all controller functions so they can be wired to routes in userRoutes.js
 module.exports = {
     registerUser,
