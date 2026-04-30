@@ -28,7 +28,7 @@ const port = process.env.PORT || 5555
 
 // ── Database Connection --------------------------
 // Connect to MongoDB before the server starts accepting requests
-connectDB()
+
 
 console.log('Connecting to DB...')
 connectDB()
@@ -61,6 +61,9 @@ app.use('/api/users', require('./routes/userRoutes'))
 
 app.get('/*splat', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'))
+})
+app.get('/health', (req, res) => {
+  res.status(200).send('OK')
 })
 // ── Global Error Handler --------------------------
 // Must be registered LAST — Express identifies error-handling middleware by its
