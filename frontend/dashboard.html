@@ -18,29 +18,32 @@
         
         <!-- CREATE DLC -->
         <h2>Create a DLC</h2>
-        <form id="createDLCForm">
-            <div class="create">
+        <div class="border">
 
-                <input type="number" id="DLCID" placeholder="Enter your DLC ID..." required> 
-                <input type="text" id="DLCTitle" placeholder="Enter your DLC's title..." required> 
-                <input type="number" id="DLCPrice" placeholder="Enter your DLC's price..." required> 
-                <input type="text" id="DLCSize" placeholder="Enter your DLC's size..." required> 
-                <input type="text" id="DLCDescription" placeholder="Enter your DLC's description..." required>  
-                <div>
-
-                    <p>Is your DLC downloaded?</p>
+            <form id="createDLCForm">
+                <div class="create">
                     
-                    <input type="radio" name="DLCDown" value="true" required> Yes
-                    <input type="radio" name="DLCDown" value="false"> No
+                    <input type="number" id="DLCID" placeholder="Enter your DLC ID..." required> 
+                    <input type="text" id="DLCTitle" placeholder="Enter your DLC's title..." required> 
+                    <input type="number" id="DLCPrice" placeholder="Enter your DLC's price..." required> 
+                    <input type="text" id="DLCSize" placeholder="Enter your DLC's size..." required> 
+                    <input type="text" id="DLCDescription" placeholder="Enter your DLC's description..." required>  
+                    <div>
+                        
+                        <p>Is your DLC downloaded?</p>
+                        
+                        <input type="radio" name="DLCDown" value="true" required> Yes
+                        <input type="radio" name="DLCDown" value="false"> No
+                    </div>
                 </div>
-            </div>
                 
                 <button type="submit" style="margin: 10;">Add DLC</button>
                 <p id="createMsg" style="color:lime;"></p>
-        </form>
-        
-        <hr>
-        
+            </form>
+            
+            <hr>
+        </div>
+            
         <!-- ALL DLCS -->
         <h2 class="border">All DLCs</h2>
         <div id="DLCsList" class="border"></div>
