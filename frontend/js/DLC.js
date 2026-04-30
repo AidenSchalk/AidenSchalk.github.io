@@ -70,11 +70,11 @@ function renderDLCs(DLCs) {
     div.innerHTML = `
       <p><strong>ID:</strong> ${DLC._id}</p>
       <p class="title3">${DLC.title}</p>
-      <p class="text4">${DLC.DLCID}</p>
-      <p class="text4">${DLC.price}</p>
+      <p class="text4">ID: ${DLC.DLCID}</p>
+      <p class="text4">$${DLC.price}</p>
       <p class="text4">Downloaded: ${DLC.downloaded}</p>
-      <p class="text4">${DLC.size}</p>
-      <p class="subtext">${DLC.description}</p>
+      <p class="text4">${DLC.size} mb</p>
+      <p class="subtext">Description: ${DLC.description}</p>
 
       <button onclick="deleteDLC('${DLC._id}')">Delete</button>
       <hr>
