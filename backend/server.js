@@ -51,6 +51,9 @@ app.use(express.static(path.join(__dirname, '../frontend')))
 app.use('/api/DLCs', require('./routes/DLCRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/index.html'))
+})
 // ── Global Error Handler --------------------------
 // Must be registered LAST — Express identifies error-handling middleware by its
 // position in the stack. Any error thrown (via throw or next(err)) in a route
