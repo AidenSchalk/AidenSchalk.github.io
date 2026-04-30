@@ -104,8 +104,8 @@ document.getElementById('createDLCForm').addEventListener('submit', async (e) =>
   e.preventDefault()
 
   const title = document.getElementById('DLCTitle').value
-  const DLCID = document.getElementById('DLCID').value
-  const price = document.getElementById('DLCPrice').value
+  const DLCID = Number(document.getElementById('DLCID').value)
+  const price = Number(document.getElementById('DLCPrice').value)
   const downloaded = document.querySelector('input[name="DLCDown"]:checked').value === 'true'
   const size = document.getElementById('DLCSize').value
   const description = document.getElementById('DLCDescription').value

@@ -1,4 +1,3 @@
-const { Int32 } = require('mongodb')
 const mongoose = require('mongoose') // Mongoose is the ODM (Object Data Modeling) library that lets us define schemas and interact with MongoDB using JavaScript objects
 
 // Define the shape and rules for documents in the 'DLCs' collection
@@ -20,7 +19,7 @@ const DLCSchema = mongoose.Schema(
 
     // ---- DLC Content ----------------------------------------------
     DLCID: {
-      type: Int32,
+      type: Number,
       required: [true, 'Please add a number value'], // Second element is a custom error message returned when validation fails
     },
     title: {
@@ -28,7 +27,7 @@ const DLCSchema = mongoose.Schema(
       required: [true, 'Please add a text value'], // Second element is a custom error message returned when validation fails
     },
     price: {
-      type: Int32,
+      type: Number,
       required: [true, 'Please add a number value'], // Second element is a custom error message returned when validation fails
     },
     downloaded: {
