@@ -92,8 +92,10 @@ function renderDLCs(DLCs) {
         DLC.description
       )
     })
+    const line = document.createElement('hr');
+    line.innerHTML = '<hr>'
     div.appendChild(button);
-    div.appendChild('<hr>');
+    div.appendChild(line);
     container.appendChild(div)
   })
 }
