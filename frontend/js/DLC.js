@@ -93,7 +93,6 @@ function renderDLCs(DLCs) {
       )
     })
     const line = document.createElement('hr');
-    line.innerHTML = '<hr>'
     div.appendChild(button);
     div.appendChild(line);
     container.appendChild(div)
