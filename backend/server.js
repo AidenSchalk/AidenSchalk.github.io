@@ -59,7 +59,7 @@ app.use(express.static(path.join(__dirname, '../frontend')))
 app.use('/api/DLCs', require('./routes/DLCRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
-app.get('*', (req, res) => {
+app.get('/*splat', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'))
 })
 // ── Global Error Handler --------------------------
