@@ -77,7 +77,6 @@ function renderDLCs(DLCs) {
       <p class="subtext">Description: ${DLC.description}</p>
 
       <button onclick="deleteDLC('${DLC._id}')">Delete</button>
-      <hr>
     `
     const button = document.createElement('button')
     button.textContent = "Edit"
@@ -94,6 +93,7 @@ function renderDLCs(DLCs) {
       )
     })
     div.appendChild(button);
+    div.appendChild('<hr>');
     container.appendChild(div)
   })
 }
