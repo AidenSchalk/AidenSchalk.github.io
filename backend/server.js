@@ -4,13 +4,18 @@
 // instead of the system default — fixes environments where MongoDB's hostnames
 // (e.g. cluster0.xxxxx.mongodb.net) fail to resolve correctly
 
+console.log('Starting server...')
+console.log('__dirname:', __dirname)
+console.log('Frontend path:', path.join(__dirname, '../frontend'))
+
+
 const dns = require('dns')
 dns.setServers(['8.8.8.8', '1.1.1.1'])
 
 // ── Core Dependencies --------------------------
 const express = require('express')                  // The web framework — handles routing, middleware, and HTTP request/response
 const path = require('path')                        // Built-in Node module — builds file system paths that work correctly on any OS (Windows/Mac/Linux)
-require('dotenv').config()                          // Loads environment variables from .env into process.env — must run before anything that reads process.env (DB URI, JWT secret, PORT, etc.)
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') })
 
 // ── App-specific Imports --------------------------
 const connectDB = require('./config/db')            // Function that establishes the Mongoose connection to MongoDB Atlas
@@ -25,6 +30,9 @@ const port = process.env.PORT || 5555
 // Connect to MongoDB before the server starts accepting requests
 connectDB()
 
+console.log('Connecting to DB...')
+connectDB()
+console.log('connectDB called')
 // ── Express App Setup --------------------------
 const app = express()
 

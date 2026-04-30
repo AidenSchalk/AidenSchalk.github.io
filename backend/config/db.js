@@ -22,7 +22,8 @@ const connectDB = async()=>{
     } catch (error) {
         // If connection fails (wrong URI, DB is down, network issue), 
         // log the error so we know what went wrong
-        console.log(error)
+        console.error('MongoDB connection error:')
+        console.error(error.message)
 
         // Exit the entire Node.js process with code 1 
         //  code 1 means "failure", 
