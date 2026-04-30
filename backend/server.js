@@ -4,6 +4,7 @@
 // instead of the system default — fixes environments where MongoDB's hostnames
 // (e.g. cluster0.xxxxx.mongodb.net) fail to resolve correctly
 
+const path = require('path')                        // Built-in Node module — builds file system paths that work correctly on any OS (Windows/Mac/Linux)
 console.log('Starting server...')
 console.log('__dirname:', __dirname)
 console.log('Frontend path:', path.join(__dirname, '../frontend'))
@@ -14,7 +15,6 @@ dns.setServers(['8.8.8.8', '1.1.1.1'])
 
 // ── Core Dependencies --------------------------
 const express = require('express')                  // The web framework — handles routing, middleware, and HTTP request/response
-const path = require('path')                        // Built-in Node module — builds file system paths that work correctly on any OS (Windows/Mac/Linux)
 require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') })
 
 // ── App-specific Imports --------------------------
