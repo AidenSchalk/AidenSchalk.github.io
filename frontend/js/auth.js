@@ -67,6 +67,7 @@ if (loginForm) {
 
       // Parse the JSON response body
       const data = await res.json()
+      console.log('LOGIN RESPONSE:', data) 
 
       if (!res.ok) {
         // Show the server error message (e.g. 'Invalid credentials')
