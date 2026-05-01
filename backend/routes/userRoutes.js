@@ -7,6 +7,7 @@ const {
   registerUser, // POST / — creates a new user account with a hashed password
   loginUser,    // POST /login — validates credentials and returns a JWT
   getMe,        // GET  /me   — returns the profile of the currently logged-in user
+  getAllUsers
 } = require('../controllers/userController')
 
 // Import the `protect` middleware — validates the JWT on any route that requires authentication.
@@ -34,6 +35,9 @@ router.post('/login', loginUser)
 // — reinforces that getMe is completely unreachable without a valid token
 
 router.get('/me', protect, getMe)
+
+router.get('/all', getAllUsers)
+
 
 // Export this router so server.js can mount it:
 // app.use('/api/users', require('./routes/userRoutes'))

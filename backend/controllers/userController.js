@@ -125,11 +125,16 @@ const generateToken = (id) => {
         }
     )
 }
+const getAllUsers = asyncHandler(async (req, res) => {
+  const users = await DLC.find()
+  res.status(200).json(users)
+})
 
 
 // Export all controller functions so they can be wired to routes in userRoutes.js
 module.exports = {
     registerUser,
     loginUser,
-    getMe
+    getMe, 
+    users
 }
