@@ -136,11 +136,17 @@ const deleteDLC = asyncHandler(async (req, res) => {
     res.status(200).json({ message: `Delete DLC ${req.params.id}` })
 }
 )
+// ===== GET ALL DLCS (PUBLIC) =====
+const getAllDLCs = asyncHandler(async (req, res) => {
+  const dlcs = await DLC.find()
+  res.status(200).json(dlcs)
+})
 
 // Export all four functions so DLCRoutes.js can attach them to the corresponding HTTP endpoints
 module.exports = {
     getDLCs,
     setDLC,
     updateDLC,
-    deleteDLC
+    deleteDLC,
+    getAllDLCs
 }

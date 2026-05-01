@@ -12,7 +12,8 @@ const {
     getDLCs,    // GET    — fetch all DLCs belonging to the authenticated user
     setDLC,     // POST   — create a new DLC
     updateDLC,  // PUT    — overwrite an existing DLC by ID
-    deleteDLC   // DELETE — remove a DLC by ID
+    deleteDLC,   // DELETE — remove a DLC by ID
+    getAllDLCs
 } = require('../controllers/DLCController')
 
 // Import the `protect` middleware from authMiddleware.js
@@ -30,6 +31,7 @@ const { protect } = require('../middleware/authMiddleware')
 // POST /api/DLCs/  → protect runs first, then setDLC  (creates a DLC owned by req.user)
 
 router.route('/').get(protect, getDLCs).post(protect, setDLC)
+router.get('/all', getAllDLCs)
 
 // ---- Routes for /api/DLCs/:id--------------------------
 // PUT    /api/DLCs/:id → protect runs first, then updateDLC (edits DLC with matching :id)

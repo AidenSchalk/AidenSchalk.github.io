@@ -56,15 +56,9 @@ app.use(express.static(path.join(__dirname, '../frontend')))
 // Mount the DLC and user routers under their respective base paths.
 // All routes defined in DLCRoutes.js are prefixed with /api/DLCs
 // All routes defined in userRoutes.js are prefixed with /api/users
-app.use('/api/DLCs', require('./routes/DLCRoutes'))
+app.use('/api/dlcs', require('./routes/DLCRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 
-app.get('/*splat', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/index.html'))
-})
-app.get('/health', (req, res) => {
-  res.status(200).send('OK')
-})
 // ── Global Error Handler --------------------------
 // Must be registered LAST — Express identifies error-handling middleware by its
 // position in the stack. Any error thrown (via throw or next(err)) in a route

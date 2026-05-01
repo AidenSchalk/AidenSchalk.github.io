@@ -36,7 +36,7 @@ const server = http.createServer( (req, res) => {
         )
 
     }
-    else if(req.url === '/api/DLCs'){
+    else if(req.url === '/api/dlcs'){
 
             DLCcollection.find({}).toArray()
                 .then(results => {
@@ -50,7 +50,7 @@ const server = http.createServer( (req, res) => {
     }
     else if(req.url === '/api/users'){
 
-            DLCcollection.find({}).toArray()
+            userscollect.find({}).toArray()
                 .then(results => {
                     res.writeHead(200, { 'Content-Type': 'application/json' });
                     res.end(JSON.stringify(results));
