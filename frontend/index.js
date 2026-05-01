@@ -10,10 +10,12 @@ const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri);
 
 let DLCcollection;
+let userscollect;
 async function connectDB() {
     try {
         await client.connect();
-        DLCcollection = client.db("DLCdb").collection("DLCcollection");
+        DLCcollection = client.db("test").collection("dlcs");
+        userscollect = client.db("test").collection("users");
         console.log("Connected to MongoDB");
     } catch (e) {
         console.error("MongoDB connection failed:", e);
@@ -34,7 +36,19 @@ const server = http.createServer( (req, res) => {
         )
 
     }
-    else if(req.url === '/api'){
+    else if(req.url === '/api/DLCs'){
+
+            DLCcollection.find({}).toArray()
+                .then(results => {
+                    res.writeHead(200, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify(results));
+                })
+                .catch(err => {
+                    res.writeHead(500, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify({ error: "Failed to fetch books" }));
+                });
+    }
+    else if(req.url === '/api/users'){
 
             DLCcollection.find({}).toArray()
                 .then(results => {
