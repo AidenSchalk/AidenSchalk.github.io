@@ -126,7 +126,7 @@ const generateToken = (id) => {
     )
 }
 const getAllUsers = asyncHandler(async (req, res) => {
-  const users = await DLC.find()
+  const users = await User.find()
   res.status(200).json(users)
 })
 
@@ -136,5 +136,5 @@ module.exports = {
     registerUser,
     loginUser,
     getMe, 
-    users
+    getAllUsers
 }
